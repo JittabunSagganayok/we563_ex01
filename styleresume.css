@@ -1,0 +1,203 @@
+body{
+    margin: 0 ;
+    padding: 0;
+    background-color: #333;
+    font-family: 'Courier New', Courier, monospace;
+ 
+
+}
+header {
+    background-color: black;
+    padding: 20px;
+    animation-name: ex;
+    animation-duration: 5s ;
+    animation-iteration-count: infinite;
+  }
+  @keyframes ex{
+    from {background-color: orange;}
+    to {background-color: black ;}
+  }
+  nav {
+    display: flex;
+    justify-content: start;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  nav li {
+    margin: 0 50px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+
+  nav a:hover , #resume {
+    color: #ff9900;
+    border-bottom: 2px solid #ff9900;
+  }
+  
+
+
+img {
+    border-radius: 20px; 
+  
+   height: 600px;
+
+   z-index: -1;
+
+}
+  
+.container {
+	display: flex;
+	
+	justify-content: center;
+	align-items: center;
+	margin: 10px auto;
+	max-width: 100%;
+}
+.text-container {
+    position:absolute;
+    top: 550px;
+    left: 150px;
+    
+    z-index: 1;
+    color: black;
+    text-align: start;
+   
+  }
+  
+  .text-container h1 {
+    font-size: 2rem;
+    font-weight: bolder;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+   
+  }
+  
+  .text-container p {
+    font-size: 1.5rem;
+    
+    font-weight: bold;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  }
+.card {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	background-color: #fff;
+	border-radius: 20px;
+	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+	margin: 10px;
+	width: 50%;
+	max-width: 100%;
+    height: 600px;
+}
+
+
+.card div {
+	padding: 40px;
+  
+}
+
+.card h2 {
+	font-size: x-large;
+	margin-bottom: 10px;
+}
+
+
+
+.card ul {
+	margin-left: 20px;
+    font-size:x-large;
+    margin-bottom: 40px;
+}
+
+.card span  {
+  
+  
+	margin-left: 20px;
+  font-size:large;
+  
+  
+     
+}
+/* 
+.card progress{
+    margin-bottom: 10px;
+} */
+
+
+.footer {
+	background-color: blue;
+	color: #fff;
+	text-align: center;
+	padding: 10px;
+	margin-top: 10px;
+    font-size: 1.5rem;
+    animation-name: ex2;
+    animation-duration: 5s ;
+    animation-iteration-count: infinite;
+  }
+  @keyframes ex2{
+    from {background-color: red;}
+    to {background-color: blue ;}
+  }
+
+  
+  
+#html {
+    padding: 5px;
+    width: 50%;
+    height: 5%;
+    background-color: white;
+    
+    
+    margin-left: 63px;
+}
+#css {
+    padding: 5px;
+    width: 50%;
+    height: 5%;
+    
+    border-radius: 10px;
+    
+    margin-left: 73px;
+}
+#js {
+    
+    padding: 5px;
+    width: 50%;
+    height: 5%;
+    
+    border-radius: 10px;
+    
+    margin-left: -3px;
+}
+#sql {
+    padding: 5px;
+    width: 50%;
+    height: 5%;
+    
+    border-radius: 10px;
+    
+    margin-left: 52px;
+    
+}
+
+#php {
+    
+    
+    padding: 4px;
+    width: 50%;
+    height: 5%;
+    
+    border-radius: 10px;
+   
+    margin-left: 75px;
+} 
