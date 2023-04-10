@@ -46,7 +46,7 @@ header {
 
 img {
     border-radius: 20px; 
-  
+    margin-top: 20px;
    height: 600px;
 
    z-index: -1;
@@ -55,16 +55,18 @@ img {
   
 .container {
 	display: flex;
-	
+	flex-direction: row;
 	justify-content: center;
-	align-items: center;
+	align-items: start;
 	margin: 10px auto;
 	max-width: 100%;
 }
 .text-container {
+
+    max-width: 100px;
     position:absolute;
-    top: 550px;
-    left: 150px;
+    top: 55%;
+    left: 18%;
     
     z-index: 1;
     color: black;
@@ -93,8 +95,8 @@ img {
 	background-color: #fff;
 	border-radius: 20px;
 	box-shadow: 0 5px 10px rgba(0,0,0,0.3);
-	margin: 10px;
-	width: 50%;
+	margin: 50px;
+	width: 40%;
 	max-width: 100%;
     height: 600px;
 }
@@ -123,15 +125,39 @@ img {
   
 	margin-left: 20px;
   font-size:large;
+ 
   
   
      
 }
-/* 
-.card progress{
-    margin-bottom: 10px;
-} */
 
+progress[value] {
+  margin-top: 10px;
+  /* Reset the default appearance */
+  -webkit-appearance: none;
+   appearance: none;
+
+  width: 250px;
+  height: 20px;
+}
+progress[value]::-webkit-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+}
+progress[value]::-webkit-progress-value {
+  background-image:
+	   -webkit-linear-gradient(-45deg, 
+	                           transparent 33%, rgba(0, 0, 0, .1) 33%, 
+	                           rgba(0,0, 0, .1) 66%, transparent 66%),
+	   -webkit-linear-gradient(top, 
+	                           rgba(255, 255, 255, .25), 
+	                           rgba(0, 0, 0, .25)),
+	   -webkit-linear-gradient(left, #09c, #f44);
+
+    
+    
+}
 
 .footer {
 	background-color: blue;
@@ -151,11 +177,10 @@ img {
 
   
   
-#html {
+  #html {
     padding: 5px;
     width: 50%;
     height: 5%;
-    background-color: white;
     
     
     margin-left: 63px;
@@ -165,7 +190,6 @@ img {
     width: 50%;
     height: 5%;
     
-    border-radius: 10px;
     
     margin-left: 73px;
 }
@@ -175,7 +199,7 @@ img {
     width: 50%;
     height: 5%;
     
-    border-radius: 10px;
+    
     
     margin-left: -3px;
 }
@@ -184,7 +208,7 @@ img {
     width: 50%;
     height: 5%;
     
-    border-radius: 10px;
+    
     
     margin-left: 52px;
     
@@ -197,7 +221,7 @@ img {
     width: 50%;
     height: 5%;
     
-    border-radius: 10px;
+    /* border-radius: 10px; */
    
     margin-left: 75px;
 } 
